@@ -7,6 +7,14 @@
 const app = new Vue({
     el: '#app',
     data: {
-       
+       message: '',
+        myPlaceHolder: 'Inserisci un testo',
+        myImage: 'https://picsum.photos/200/300',
+        number: 10
+    },
+    methods: {
+        addNumber: function () {
+            this._data.number++;
+        }
     }
 });

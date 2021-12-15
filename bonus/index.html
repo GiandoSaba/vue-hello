@@ -9,7 +9,12 @@
 </head>
 <body>
     <div id="app">
-        
+        <input type="text" v-model="message" :placeholder="myPlaceHolder">
+        <p>{{ message }}</p>
+
+        <img :src="myImage">
+        <p>{{ number }}</p>
+        <button @click="addNumber">Add Number</button>
     </div>
 
     <script src="script.js"></script>
